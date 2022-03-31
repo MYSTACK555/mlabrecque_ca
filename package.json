@@ -1,0 +1,13 @@
+{
+  "name": "personnaWebsite",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@liqueflies/vue-flex-grid": "^0.0.1",
+    "gridsome": "^0.7.0"
+  }
+}
