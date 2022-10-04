@@ -27,6 +27,7 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
+  background-color: rgb(240, 240, 240)
 }
 
 .layout {
