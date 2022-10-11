@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@growthbunker/vuetimeline": "^0.1.17",
+    "@growthbunker/vuetimeline": "^0.4.18",
     "@liqueflies/vue-flex-grid": "^0.0.1",
     "gridsome": "^0.7.0"
   }
