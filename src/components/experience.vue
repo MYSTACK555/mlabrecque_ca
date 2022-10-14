@@ -1,27 +1,31 @@
 <template>
-  <div class="experience_container">
-    <vue-timeline-update  v-for="exp in experiences"
-    :key="exp.id"
-    :date="new Date(exp.date)"
-    :title="exp.title" 
-    :business="exp.business" 
-    :description="exp.description"
-    :category="exp.category" 
-    :icon="exp.icon" 
-    :color="exp.color" />
+  <div id="timeline" class="experience_container">
+    <vue-timeline-update
+      v-for="exp in experiences"
+      :key="exp.id"
+      :date="new Date(exp.date)"
+      :title="exp.title"
+      :business="exp.business"
+      :description="exp.description"
+      :category="exp.category"
+      :icon="exp.icon"
+      :color="exp.color"
+    />
   </div>
 </template>
 <script>
-export default {
+const Experience = {
+  name: "experience-component",
   data() {
     return {
       experiences: [
         {
           id: 1,
-          date: '',
-          business: '',
-          title: 'Analyste - Automatisation',
-          description: "\
+          date: "",
+          business: "",
+          title: "Analyste - Automatisation",
+          description:
+            "\
           <h3>KPMG-Egyde services conseil</h3>\
           <div class='description'>\
             <ul>\
@@ -40,32 +44,34 @@ export default {
               </li>\
             </ul>\
           </div>",
-          category: 'Emploie',
+          category: "Emploie",
           color: "blue",
-          icon: "code"
+          icon: "code",
         },
         {
           id: 2,
-          date: '2020-12-16',
-          business: '',
-          title: 'Développeur Full-Stack',
-          description: "\
+          date: "2020-12-16",
+          business: "",
+          title: "Développeur Full-Stack",
+          description:
+            "\
           <h3>Sideline life (Startup)</h3>\
           <div class='description'>\
             <ul>\
               <li>Développer une plateforme web en .net core 3.1</li>\
             </ul>\
           </div>",
-          category: 'Emploie',
+          category: "Emploie",
           color: "blue",
-          icon: "code"
+          icon: "code",
         },
         {
           id: 3,
-          date: '2020-12-20',
-          business: '',
-          title: 'Développeur en recherche',
-          description: "\
+          date: "2020-12-20",
+          business: "",
+          title: "Développeur en recherche",
+          description:
+            "\
           <h3>AMI Lab - Bessam Abdulrazak (Université de Sherbrooke)</h3>\
           <div class='description'>\
             <ul>\
@@ -75,16 +81,17 @@ export default {
               <li>Développer un model JSON pour la communication entre l’interface utilisateur et le module python</li>\
             </ul>\
           </div>",
-          category: 'Stage',
+          category: "Stage",
           color: "green",
-          icon: "code"
+          icon: "code",
         },
         {
           id: 4,
-          date: '2020-04-16',
-          business: '',
-          title: 'Développeur logiciel',
-          description: "\
+          date: "2020-04-16",
+          business: "",
+          title: "Développeur logiciel",
+          description:
+            "\
           <h3>Desjardins Assurance Générale</h3>\
           <div class='description'>\
             <ul>\
@@ -92,16 +99,17 @@ export default {
               <li>Développement agile/Scrum</li>\
             </ul>\
           </div>",
-          category: 'Stage',
+          category: "Stage",
           color: "green",
-          icon: "code"
+          icon: "code",
         },
         {
           id: 5,
-          date: new Date('2019-08-17'),
-          business: '',
-          title: 'Développeur logiciel',
-          description: "\
+          date: new Date("2019-08-17"),
+          business: "",
+          title: "Développeur logiciel",
+          description:
+            "\
           <h3>Desjardins sécurité financière</h3>\
           <div class='description'>\
             <ul>\
@@ -109,23 +117,26 @@ export default {
               <li>Développement agile/Scrum</li>\
             </ul>\
           </div>",
-          category: 'Stage',
+          category: "Stage",
           color: "green",
-          icon: "code"
-        }
-      ]
-    }
-  }
-}
+          icon: "code",
+        },
+      ],
+    };
+  },
+};
+export default Experience;
 </script>
 <style>
 .gb-vue-timeline-update--light {
-    color: #000000 !important ;
+  color: #000000 !important ;
 }
 .experience_container {
-justify-content: center;
+  justify-content: center;
 }
-.gb-vue-timeline-update--light .gb-vue-timeline-update__right .gb-vue-timeline-update__description {
+.gb-vue-timeline-update--light
+  .gb-vue-timeline-update__right
+  .gb-vue-timeline-update__description {
   color: #000000 !important ;
 }
 </style>
